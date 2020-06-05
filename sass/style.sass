@@ -1,0 +1,84 @@
+body
+  background: #000
+  color: #fff
+  background-image: url(../image/human/main.png) 
+  background-repeat: no-repeat
+  background-size: 100%
+  background-position: top center
+.container
+  width: 1060px
+  margin: auto
+  position: relative
+  padding: 0px 10px
+.d-flex
+  display: flex
+.jfsb
+  justify-content: space-between
+.flex-dc
+  flex-direction: column
+.colors
+  background: linear-gradient(180deg, #5327ff 10%,#11aeff 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+.main-list
+  display: flex
+  flex-direction: column
+  position: relative
+  top: 75px
+  z-index: 99
+  &__text
+    writing-mode: vertical-rl
+    font-size: 14px
+    font-family: "Gilroy"
+    color: #5c5c5c
+    font-weight: bold
+    opacity: 0.8
+    position: absolute
+    top: 180px
+    left: 3.5px
+    height: 100px
+  &__item
+    padding-left: 0
+    list-style: none
+    align-items: center
+    display: flex
+    flex-direction: column
+    position: absolute
+    &-hover
+      margin-top: 10px
+      & .elips
+        width: 6px
+        height: 6px
+        background-color: #4c37ff
+        border-radius: 50%
+        margin: 5px
+        display: block
+    & .active
+      border: 1px solid #4c37ff
+      margin-top: 20px
+      border-radius: 50%
+      & .elips
+        width: 9px
+        height: 9px
+        display: block
+        box-shadow: 1px 1px 7px #4c37ff, -1px 0px 5px #4c37ff, 1px -3px 11px #4c37ff
+
+@import "fonts"
+// подключили шрифты
+@import "header"
+// подключили стили шапки
+@import "main"
+// подключили стили маин
+@import "about"
+// подключили стили о нас
+@import "form"
+// подключили стили форм
+@import "reviews"
+// подключили стили отзывы
+@import "button"
+// подключили стили кнопка
+@import "formfooter"
+// подключили стили форма подвал
+@import "media"
+// подключили стили медиа
+
